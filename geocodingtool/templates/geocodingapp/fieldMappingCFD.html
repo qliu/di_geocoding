@@ -52,7 +52,6 @@ p {
 }
 	
 .firstRow{
-/*	background-color: orange;*/
 	height: 100px;
 
 }
@@ -250,7 +249,6 @@ dd{
 	color:grey; 
 	font-size:40px; 
 	float:right;     
-	/*margin: 50px 160px 0 0;*/
 	margin-top: 50px;
 }
 .uploadButton{
@@ -294,9 +292,22 @@ dd{
     float: left;
     margin-left: 62px;
 }
+
 th.sorting, th.sorting_desc{
 	background-color: #9bd9e3;
 }
+
+.miniNav.home{
+	color:white;
+	font-style: italic;
+	font-size:12px;
+}
+.miniNav.quickGuide{
+	display: block;
+	padding: 5px 0;
+	color:white;
+	font-style: italic;
+	font-size:12px;
 </style>
 </head>
 
@@ -337,6 +348,10 @@ th.sorting, th.sorting_desc{
 					<div id="accordion">
 					
 					  <h4 class="bar">FIELD MAPPING
+					  	<div style="float:left; text-align:left; margin-top: -10px;">
+							<a class="miniNav home">Home</a>
+							<a class="miniNav quickGuide">Quick Guide</a>
+						</div>
 					  </h4>
 					  <div class="barBg">
 					  	<h4 style="font-style:italic; margin-right:10px;">Select column name<br> to match the field</h4>
@@ -380,7 +395,7 @@ th.sorting, th.sorting_desc{
 			<div class="bar" style="
 				float:left;
 				background-color: #6AD1E3;
-				/*height: 500px;*/
+				
 				width: 790px;
 				padding-left: 20px;	
 				margin:90px 0 0 0;
@@ -502,24 +517,7 @@ th.sorting, th.sorting_desc{
 				</div>
 			</div>
 		</div>
-		<!-- <div class="col-md-8 mapBack">
-
-			
-			<div class="panel-body">
-                <div class="form-group input-group">
-                    <span class="input-group-addon">Address</span>
-                    <input id="input-address" type="text" class="form-control" placeholder="Enter an address (zip code is optional). Example: 1705 17th St, Denver, CO, 80202">
-                    <span class="input-group-btn"><a id="btn-geocode" class="btn btn-warning" href="#map" title="Geocode"><i class="glyphicon glyphicon-map-marker addressBar"></i></a></span>
-                </div>
-                <div class="form-group input-group has-success">
-                    <span class="input-group-addon">Location</span>
-                    <input id="input-point-coord" type="text" class="form-control">
-                    <span class="input-group-btn"><button id="copy-coordinates" class="btn btn-success" data-clipboard-target="#input-point-coord" title="Copy to clipboard"><i class="glyphicon glyphicon-search"></i></button></span>
-                </div>
-                <input id="url-geocode" type="hidden" value="{% setting 'ROOT_APP_URL' %}/instant_geocoding/"></input>
-                <div id="map">mapgoeshere</div>
-			</div>
-		</div> -->
+		
 	</div>
 <!-- </div> -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

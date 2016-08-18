@@ -52,7 +52,6 @@ p {
 }
 	
 .firstRow{
-/*	background-color: orange;*/
 	height: 100px;
 
 }
@@ -199,11 +198,8 @@ p {
 	text-align: right;
 }
 .barBgOverflow{
-	/*background-color: lightgrey;*/
 	width: 100%;
-	/*float: right;*/
 	height: 450px !important;
-	/*text-align: right;*/
 	overflow: scroll;
 }
 .barWrap{
@@ -258,7 +254,6 @@ dd{
 	color:grey; 
 	font-size:40px; 
 	float:right;     
-	/*margin: 50px 160px 0 0;*/
 	margin-top: 50px;
 }
 .uploadButton{
@@ -314,6 +309,18 @@ th.sorting, th.sorting_desc, th.sorting_asc{
 .table>tbody>tr>td.markerLink{
 	padding-top:0;
 }
+
+.miniNav.home{
+	color:white;
+	font-style: italic;
+	font-size: 12px;
+}
+.miniNav.quickGuide{
+	display: block;
+	padding: 5px 0;
+	color:white;
+	font-style: italic;
+	font-size: 12px;
 </style>
 </head>
 
@@ -354,6 +361,10 @@ th.sorting, th.sorting_desc, th.sorting_asc{
 					<div id="accordion">
 					
 					  <h4 class="bar">RESULTS TABLE
+					  	<div style="float:left; text-align:left; margin-top: -10px;">
+							<a class="miniNav home">Home</a>
+							<a class="miniNav quickGuide">Quick Guide</a>
+						</div>
 					  </h4>
 						  <div class="barBg">
 						  <div class="row csvSearch">
@@ -593,7 +604,6 @@ th.sorting, th.sorting_desc, th.sorting_asc{
 			<div class="bar" style="
 				float:left;
 				background-color: #6AD1E3;
-				/*height: 500px;*/
 				width: 790px;
 				padding-left: 20px;	
 				margin:90px 0 0 0;

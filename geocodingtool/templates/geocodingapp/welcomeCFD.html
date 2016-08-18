@@ -296,6 +296,22 @@ dd{
     float: left;
     margin-left: 62px;
 }
+.miniNav{
+	font-size: 12px;
+	text-align: left;
+}
+.miniNav.home{
+	color:white;
+	font-style: italic;
+	font-size:12px;
+}
+.miniNav.quickGuide{
+	display: block;
+	padding: 5px 0;
+	color:white;
+	font-style: italic;
+	font-size:12px;
+}
 </style>
 </head>
 
@@ -331,7 +347,14 @@ dd{
 		<div class="col-md-4 raiseUp">
 			<div class="barWrap">
 				<div class="col-md-12 noPadding">
-					<h3 class="fRight welcomeBar">WELCOME</h3>
+
+					<h3 class="fRight welcomeBar">
+						<div style="float:left; text-align:left; margin-top: -15px; ">
+							<a class="miniNav home">Home</a>
+							<a class="miniNav quickGuide">Quick Guide</a>
+						</div>
+						
+					WELCOME</h3>
 				</div>
 				<div class="col-md-12 noPadding">
 					<div id="accordion">

@@ -52,7 +52,6 @@ p {
 }
 	
 .firstRow{
-/*	background-color: orange;*/
 	height: 100px;
 
 }
@@ -252,7 +251,6 @@ dd{
 	color:grey; 
 	font-size:40px; 
 	float:right;     
-	/*margin: 50px 160px 0 0;*/
 	margin-top: 50px;
 }
 .uploadButton{
@@ -304,14 +302,9 @@ dd{
 	float: left;
 	color:white;
 	padding:15px;
-	/*height: auto !important;*/
 	text-align: right;
 	margin-top:100px;
-	/*background-color: lightgrey;
-	width: 8%;
-	float: right;
-	height: auto !important;
-	text-align: right;*/
+
 }
 .boxAboutText{
 
@@ -322,6 +315,17 @@ dd{
 	font-weight: 400;
 	text-align: left;
 }
+.miniNav.home{
+	color:white;
+	font-style: italic;
+	font-size:12px;
+}
+.miniNav.quickGuide{
+	display: block;
+	padding: 5px 0;
+	color:white;
+	font-style: italic;
+	font-size:12px;
 </style>
 </head>
 
@@ -357,7 +361,12 @@ dd{
 		<div class="col-md-4 raiseUp">
 			<div class="barWrap">
 				<div class="col-md-12 noPadding">
-					<h3 class="fRight welcomeBar">WELCOME</h3>
+					<h3 class="fRight welcomeBar">WELCOME
+						<div style="float:left; text-align:left; margin-top: -15px; ">
+							<a class="miniNav home">Home</a>
+							<a class="miniNav quickGuide">Quick Guide</a>
+						</div>
+					</h3>
 				</div>
 				<div class="col-md-12 noPadding">
 					<div id="accordion">
