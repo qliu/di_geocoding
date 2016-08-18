@@ -250,6 +250,10 @@ dd{
 	font-size:40px; 
 	float:right;     
 	margin-top: 50px;
+	border:0;
+	background:none !important;
+	outline: none !important;
+
 }
 .uploadButton{
 	border-radius: 500px !important;
@@ -326,13 +330,21 @@ th.sorting, th.sorting_desc{
 			</div>
 			<div class="col-md-8 headerMiddle">
 				
-				<div class="col-md-8" style="padding:0;">
+				<div class="col-md-7" style="padding:0;">
 					<img class="cdlLogo" src="imgCFD/placeholderCDL.png">
 				</div>
-				<div class="col-md-4" style="padding-right:150px;">
+				<div class="col-md-5" style="padding-right:150px;">
 					
-					<div style="float:right;" class="glyphicon glyphicon-menu-hamburger burgerMenu"></div>
-					<div style="float:right; margin-top:20px; margin-right: 10px; text-align:right;">
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle glyphicon glyphicon-menu-hamburger burgerMenu" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">	    
+					  </button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					    <li><a class="glyphicon glyphicon-user" href="#"> <p style="display:inline;">User Profile</p></a></li>
+					    <li role="separator" class="divider"></li>
+					    <li><a class="glyphicon glyphicon-log-out" href="#"><p style="display:inline; padding-left: 15px;">Sign Out</p></a></li>
+					  </ul>
+					</div>
+					<div style="float:right; margin-top:35px; margin-right: 10px; text-align:right;">
 						<h3 style="font-style:italic;">Hello,</h3><br>
 						<p style="margin-top:-25px; font-weight:bold;">Marco Polo</p>
 					</div>
@@ -521,12 +533,12 @@ th.sorting, th.sorting_desc{
 	</div>
 <!-- </div> -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   </body>
 </html>
