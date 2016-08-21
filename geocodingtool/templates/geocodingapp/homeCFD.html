@@ -67,7 +67,7 @@ p {
 .loginSquare{
 	height: 300px;
 	width: 300px ;
-	background-color:lightgrey;
+	background-color:#e8e8e8;
 	margin:150px 45px 150px 100px;
 	float: left;
 	padding-right: 10px;
@@ -86,6 +86,34 @@ p {
 	width: 100px;	
 	margin:5px	0;
 	border: none;
+}
+.signupButton2{
+	background-color: #6AD1E3;
+	color:white;
+	display: block;	
+	width: 100px;	
+	border: none;
+	margin: 45px -45px -45px 0
+}
+.signUpBar {
+	background-color: magenta;
+	height: 50px;
+	width: 100%;
+	text-align: right;
+	padding:12px 10px;
+	float:right;
+	margin-bottom: 0;
+	color:#00587C;
+}
+.ui-widget-header {
+	/*background-color:#6AD1E3;
+	height: 50px;
+	width: 85%;
+	text-align: right;
+	padding:12px 10px;
+	float:right;
+	margin-bottom: 0;
+	color:#00587C;*/
 }
 .helloBack{
 	background-color: #6AD1E3;
@@ -150,6 +178,57 @@ p {
 	}
 }
 
+fieldset.signUp{
+	padding:45px;
+	background-color: #e8e8e8;
+	width:400px;
+	 box-shadow: 0px 8px 10px gray, 
+        -10px 8px 15px gray, 10px 8px 15px gray;
+}
+label.signUp{
+	margin-top: 14px;
+	color:#00587C;
+	font-weight: 500px;
+
+}
+label.signUpName{
+	color:#00587C;
+	font-weight: 500px;
+	font-size: 14px;
+}
+input.signUp{
+	width: 100%;
+	height: 34px;
+	font-weight: 500px;
+	font-size: 14px;
+
+}
+div.signUp.ui-widget-content{
+	width: 400px; 
+
+}
+.ui-dialog-titlebar{
+	background-color:#00587C;
+	height: 50px;
+	width: 400px;
+	text-align: center;
+	padding-top: 7px;
+	 box-shadow: 0px 8px 15px gray, 
+        -10px 8px 15px gray, 10px 8px 15px gray;
+}
+.ui-dialog-title{
+	font-size: 24px;
+	color:white;
+	padding-top:7px;
+}
+button.ui-dialog-titlebar-close{
+	float: right;
+	color:white;
+	display: none;
+}
+div{
+   
+}
 </style>
 </head>
 
@@ -187,11 +266,34 @@ p {
 							<div class="col-md-12 rButton">  
 								<button type="submit" class="btn btn-default loginButton fRight">log in</button>
 							</div>
-							<div class="col-md-12 rButton">
-								<button type="submit" class="btn btn-default signupButton fRight">sign up</button>
-							</div>
+							
 						</form>
+						<!-- -------------- -->
+							<div class="signUp" id="dialog" title="Sign Up">
+							  
+							
+								<form>
+								    <fieldset class="signUp">
+								      <label class="signUpName"for="name" style="font-weight:500;">NAME</label><br/>
+								      <input class="signUp" type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" placeholder="enter your name"><br/>
+								      <label class="signUp" for="email" style="font-weight:500;">EMAIL</label><br/>
+								      <input class="signUp" type="text" name="email" id="email" class="text ui-widget-content ui-corner-all" placeholder="enter your email address"><br/>
+								      <label class="signUp" for="username" style="font-weight:500;">USERNAME</label><br/>
+								      <input class="signUp" type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" placeholder="enter your username"><br/>
+								      <label class="signUp" for="password" style="font-weight:500;">PASSWORD</label><br/>
+								      <input class="signUp" type="password" name="password" id="password" class="text ui-widget-content ui-corner-all" placeholder="enter your password">
+								      <button class="btn signupButton2 fRight" id="opener">sign up</button>
+								    </fieldset>
+							  	</form>
+							</div>
+							<div class="col-md-12 rButton">
+								<button class="btn signupButton fRight" id="opener">sign up</button>
+
+							</div>
+							
+							<!-- ---------------- -->
 					</div>
+
 
 					
 				</div>
@@ -219,8 +321,25 @@ p {
 			</div>
 	<!-- </div> -->
 </div>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- ----------------- -->
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+    });
+ 
+    $( "#opener" ).on( "click", function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  } );
+  </script>
+<!-- --------------------- -->
   </body>
 </html>
