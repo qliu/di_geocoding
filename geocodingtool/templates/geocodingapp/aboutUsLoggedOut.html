@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Bootstrap 101 Template</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+
+<!--  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css"> -->
+
+<style>
+* {
+  border-radius: 0 !important;
+}	
+h1	 {
+	color:white;
+	font-family: Raleway;
+}
+h2 {
+	font-family: Raleway;
+}
+p {
+	font-size: 16px;
+	color:darkgrey;
+	font-family: Raleway;
+}
+.divider h1, h2{
+	font-weight: 800;
+}
+.container{
+	padding: 0;
+}
+.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top, .container {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+.garyLogo{
+	height: 150px;
+	float: right;
+}
+.shiftLogo{
+	height: 120px;
+    margin-top: 39px;
+    margin-left: 27px;
+}
+.cdlLogo{
+	height: 200px;
+}
+	
+.firstRow{
+	height: 100px;
+
+}
+.headerMiddle{
+	padding-left: 0px;
+    margin-left: -10px;
+}
+.headerLeft{
+}
+
+.loginSquare{
+	height: 300px;
+	width: 300px ;
+	background-color:#e8e8e8;
+	margin:150px 45px 150px 100px;
+	float: left;
+	padding-right: 10px;
+
+
+}
+.loginButton{
+	background-color: #FA4616;
+	color:white;
+	height: 
+	width: 75px;
+	margin:5px	0;
+	border: none;
+	
+
+}
+.signupButton{
+	background-color: #6AD1E3;
+	color:white;
+	display: block;	
+	width: 75px;	
+	margin:5px	0;
+}
+.helloBack{
+	background-color: #6AD1E3;
+	height: 400px;
+	padding-left: 20px;	
+	margin:100px 0 0 0;
+	top:50%;
+}
+
+.learnmoreButton{
+	background-color: #00587C;
+	color:white;
+	border:none;
+}
+.fRight{
+	float: right;
+}
+.rButton{
+	padding-right: 0;
+}
+.loginInput{
+	width: 150px;
+	float: right;
+	margin:5px	0;	
+
+}
+.divider{	
+	border-right: 1px solid white;
+	margin: 60px 0 0 0;	
+	padding-right: 50px;	
+}
+.thinText{
+	font-size: 40px;
+	font-weight:100;
+	color:white;
+}
+.locationText{
+	font-size: 20px;
+	font-weight:bold;
+	color:white;
+}
+.tinyText{
+	font-size: 12px;
+	color:#00587C;
+}
+.locationPosition{
+	margin: 120px 0 50px 0px;
+}
+.loginPosition{
+	margin-top:20px;
+}
+.glyphicon-map-marker{
+	font-size: 75px;
+	color:#9bd9e3;
+	padding: 50% 0;	
+}
+
+@media (min-width: 1024px){
+	.container {
+    width: 100%;
+    margin:0;
+	}
+}
+
+/*this page*/
+.mapBack{
+	background-color: #e8e8e8;
+	height: 500px;
+	width: 750px;
+	padding-left: 20px;	
+	margin:100px 0 0 0;
+	top:50%;
+}
+#map { height: 500px; }
+
+.glyphicon-map-marker.addressBar{
+	font-size: 10px;
+	color: white;
+}
+
+
+.welcomeBar {
+	background-color: #6AD1E3;
+	height: 50px;
+	width: 85%;
+	text-align: right;
+	padding:12px 10px;
+	float:right;
+	margin-bottom: 0;
+	color:#00587C;
+}
+.bar{
+	background-color: #00CFB4;
+	color: white;
+	height: 50px;
+	width: 85%;
+	text-align: right;
+	padding:15px 10px;
+	float: right;
+	margin-bottom: 0;
+
+}
+.barBg{
+	background-color: #e8e8e8;
+	width: 85%;
+	float: right;
+	height: auto !important;
+	text-align: right;
+}
+
+.barWrap{
+	width: 400px;
+}
+.noPadding{
+	padding-right: 0;
+}
+.raiseUp{
+	margin-top:80px;
+}
+dl{
+padding: 5px;
+}
+dt{
+	float: left;
+	padding-left: 15px;
+	width: 50%;
+	clear: left;
+	color:#63666A;
+	font-size: 12px;
+}
+dd{
+	float: left;
+	width: 50%;
+	padding-left: 15px;
+	text-align: left;
+	font-weight: 200;
+	color:#63666A;
+	font-size: 12px;
+} 
+.aboutStyle{
+	font-weight:bold;
+	color:#63666A; 
+	border-bottom: 2px solid #63666A;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+.aboutText{
+	margin-right: 12px;
+	font-size: 14px;
+	color:#63666A;
+	font-weight: 400;
+}
+.tagsText{
+	font-size:14px; 
+	font-weight:400; 
+	color:#63666A;
+	margin-right: -4px;
+}
+.burgerMenu{
+	color:grey; 
+	font-size:40px; 
+	float:right;     
+	margin-top: 50px;
+}
+.uploadButton{
+	border-radius: 500px !important;
+    margin-left: 225px;
+    height: 25px;
+    width: 78px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.ui-state-focus{
+    outline: none;
+}
+.previousTask{
+	color:#FA4616;
+	display: inline;
+}
+.dashBottom{
+	border-bottom: 1px solid white;
+	margin-left: 20px;
+    text-align: left;
+    padding: 5px 10px;
+    margin-left: 62px;
+    color:#00587C; 	
+
+}
+.userName{
+	color:#00587C;
+	font-size: 32px;
+	font-weight: 500;
+}
+.venician{
+	margin-right:20px;
+	margin-top: 35px;
+    padding-bottom: 15px;
+    padding-top: 65px;
+}
+.signOut{
+	margin-right: 20px;
+    padding: 10px 10px;
+    float: left;
+    margin-left: 62px;
+}
+
+/*this page*/
+.boxAbout{
+	background-color: #6AD1E3;
+	width: 100%;
+	height: 450px;
+	float: left;
+	color:white;
+	padding:15px;
+	text-align: right;
+	margin-top:100px;
+
+}
+.boxAboutText{
+
+	margin-right: 12px;
+	margin-left: 12px;
+	font-size: 14px;
+	color:white;
+	font-weight: 400;
+	text-align: left;
+}
+</style>
+</head>
+
+<body>
+<!-- <div class="container"> -->
+	<div class="row ">
+		<div class="col-md-12 firstRow">
+			<div class="col-md-4">
+				<div class="col-md-6 ">
+					<img class="shiftLogo" src="imgCFD/Shift_Official_Logo.png">
+				</div>
+				<!-- <div class="col-md-6 headerLeft">
+					<img class="shiftLogo" src="imgCFD/placeholderSHIFT.png">
+				</div> -->
+			</div>
+			<div class="col-md-8 headerMiddle">
+				
+				<div class="col-md-8" style="padding:0;">
+					<img class="cdlLogo" src="imgCFD/placeholderCDL.png">
+				</div>
+				<div class="col-md-4" style="padding-right:150px; padding-top:65px;">
+					
+					<!-- <div style="float:right;" class="glyphicon glyphicon-menu-hamburger burgerMenu"></div> -->
+					<div style="float:right; margin-top:20px; margin-right: 10px; text-align:right;">
+						<!-- <h3 style="font-style:italic;">Hello,</h3><br> -->
+						<a style="margin-top:-25px;font-weight: bold; font-size:14px; color:#63666A;">LOG IN</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row ">
+		<div class="col-md-4 raiseUp">
+			<div class="barWrap">
+				<div class="col-md-12 noPadding">
+					<h3 class="fRight welcomeBar">ABOUT US</h3>
+				</div>
+				<div class="col-md-12 noPadding"  >
+					<div id="accordion">
+					  
+					  
+					  
+					  
+					  
+					  <div class="barBg" style="padding:15px; ">
+					    <h4 style="margin-right:10px; color:#63666A;">What Is Geocoding?</h4>
+					    <p class="aboutText " >
+					    	A spatial description of a location. To find geographic coordinates	from addresses.
+					    </p>
+					    <br>
+					    <h4 style="margin-right:10px; color:#63666A;">What can I use this for?</h4>
+					    <p class="aboutText " >
+					    	Lorem Ipsum A spatial description of a location. To find geographic coordinates	from addresses.
+					    </p>
+					    <br>
+					    <h4 style="margin-right:10px; color:#63666A;">How do I best utilize this tool?</h4>
+					    <p class="aboutText " >
+					    	Lorem Ipsum A spatial description of a location. To find geographic coordinates	from addresses.
+					    </p>
+					    <br>
+					    <h4 style="margin-right:10px; color:#63666A;	">Why open source?</h4>
+					    <p class="aboutText " >
+					    	Lorem Ipsum A spatial description of a location. To find geographic coordinates	from addresses.
+					    </p>
+					    
+					   
+					  </div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="col-md-7" style="padding-left:0; ">
+			<div class="col-md-6 " style="padding-left:0; padding-right:65px;">
+				<div class="boxAbout">
+					    <h4 style="margin-right:10px; text-align: left; margin-left:12px;">THE PITON FOUNDATION</h4>
+					   	<br>
+					    <p class="boxAboutText" style="font-weight:100; color:white;">
+					    	Lorem ipsum the geocoding tool facilitates spatial analysis<br>to locate addresses using a series of online<br>geocoding APIs.<br><br>Online geocoding APIs are free for non-commercial use, but have usage limits.
+					    </p>
+					    
+				</div>
+			</div>
+			
+			<div class="col-md-6" style="padding-left:0; padding-right:65px; ">
+				<div class="boxAbout" >
+					    <h4 style="margin-right:10px; text-align: left; margin-left:12px;">SHIFT RESEARCH LAB</h4>
+					   <br>
+					    <p class="boxAboutText" style="font-weight:100; color:white;">
+					    	Lorem ipsum the geocoding tool facilitates spatial analysis<br>to locate addresses using a series of online<br>geocoding APIs.<br><br>Online geocoding APIs are free for non-commercial use, but have usage limits.
+					    </p>
+					    <br>
+					    <h4 style="margin-right:10px; text-align: left;margin-left:12px;">CODE FOR DENVER</h4>
+						<br>
+					    <p class="boxAboutText" style="font-weight:100; color:white; ">
+					    	Code for Denver is a cooperative and diverse group of volunteers dedicated to solving the problems of our community with technology.
+					    	We are all working for a better Denver, a better America, and a better tomorrow.
+					    </p>
+					   
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- </div> -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+  </body>
+</html>
+<script>
+  $( function() {
+    $( "#accordion" ).accordion({
+    	active: false,
+      collapsible: true
+    });
+  } );
+
+   $(".glyphicon-menu-up").hide();
+    $(".bar").click(function(){
+         $(this).find(".glyphicon-menu-down, .glyphicon-menu-up").toggle();
+    });
+</script>
